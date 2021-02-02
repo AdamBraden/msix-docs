@@ -14,7 +14,7 @@ This article provides a deeper dive on what happens to files and registry entrie
 
 A key goal of a modern package is to separate application state from system state as much as possible while maintaining compatibility with other apps. Windows 10 accomplishes this by placing the application inside a MSIX package, and then detecting and redirecting some changes it makes to the file system and registry at runtime.
 
-Packages that you create for your desktop application are desktop-only, full-trust applications and are not virtualized or sandboxed. This allows them to interact with other apps the same way classic desktop applications do.
+Packages that you create for your desktop application are desktop-only, full-trust applications and are not sandboxed. This allows them to interact with the system and other apps the same way classic desktop applications do. The [MSIX container](/windows/msix/msix-container) does provide lightweight virtualization of the filesystem and registry to support clean install and uninstall. 
 
 ## Installation
 
